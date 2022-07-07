@@ -19,3 +19,4 @@ e il naufragar m'è dolce in questo mare.";
 ?>
 
 <p><?php echo $paragrafo ?></p>
+<p>Il parafgrafo contiene <?php echo strlen($paragrafo) ?> caratteri.</p>
