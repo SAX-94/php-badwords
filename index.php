@@ -1,20 +1,19 @@
 <?php
 
-$paragrafo = "Sempre caro mi fu quest'ermo colle,
-e questa siepe, che da tanta parte
-dell'ultimo orizzonte il guardo esclude.
-Ma sedendo e mirando, interminati
-spazi di là da quella, e sovrumani
-silenzi, e profondissima quiete
-io nel pensier mi fingo, ove per poco
-il cor non si spaura. E come il vento
-odo stormir tra queste piante, io quello
-infinito silenzio a questa voce
-vo comparando: e mi sovvien l'eterno,
-e le morte stagioni, e la presente
-e viva, e il suon di lei. Così tra questa
-immensità s'annega il pensier mio:
-e il naufragar m'è dolce in questo mare.";
+$paragrafo = "S’i’ fosse foco, arderei ’l mondo; 
+s’i’ fosse vento, lo tempesterei; 
+s’i’ fosse acqua, i’ l’annegherei; 
+s’i’ fosse Dio, mandereil’en profondo;
+s’i’ fosse papa, sare’ allor giocondo, 
+ché tutti cristïani imbrigherei; 
+s’i’ fosse ’mperator, sa’ che farei? 
+A tutti mozzarei lo capo a tondo.
+S’i’ fosse morte, andarei da mio padre; 
+s’i’ fosse vita, fuggirei da lui: 
+similemente farìa da mi’ madre.
+S’i’ fosse Cecco, com’i’ sono e fui, 
+torrei le donne giovani e leggiadre: 
+e vecchie e laide lasserei altrui.";
 
 ?>
 
@@ -23,12 +22,12 @@ e il naufragar m'è dolce in questo mare.";
 
 <?php
 // Tramite il parametro GET passo la parola da censurare
-$word = $_GET["mare"];
+$word = $_GET["fosse"];
 ?>
 
 <!-- Ristampo il paragrafo e la sua lunghezza dopo aver censurato la parola mare con tre *** -->
-<?php if (stripos($paragrafo, "mare") !== false) {
-    $paragrafo = str_ireplace("mare", "***", $paragrafo);
+<?php if (stripos($paragrafo, "fosse") !== false) {
+    $paragrafo = str_ireplace("fosse", "***", $paragrafo);
 }
 $str_len = strlen($paragrafo)
 ?>
