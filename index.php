@@ -17,8 +17,10 @@ e vecchie e laide lasserei altrui.";
 
 ?>
 
+<h2>Censura la parola "fosse" nel seguente paragrafo, e conta quanti caratteri contiene prima e dopo:</h2>
+
 <p><?php echo $paragrafo ?></p>
-<p>Il paragrafo contiene <strong><?php echo strlen($paragrafo) ?></strong> caratteri.</p>
+<p>○ Il paragrafo contiene <strong><?php echo strlen($paragrafo) ?></strong> caratteri.</p>
 
 <?php
 // Tramite il parametro GET passo la parola da censurare
@@ -33,4 +35,4 @@ $str_len = strlen($paragrafo)
 ?>
 <p><?php echo $paragrafo ?></p>
 <br>
-Ora il paragrafo è lungo <strong><?php echo $str_len ?></strong> caratteri.
+<p>○ Ora il paragrafo è lungo <strong><?php echo $str_len ?></strong> caratteri.</p>
